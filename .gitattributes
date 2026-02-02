@@ -1,0 +1,11 @@
+# Git-crypt configuration
+# Encrypt everything by default
+* filter=git-crypt diff=git-crypt
+
+# Exceptions - do NOT encrypt these files
+.gitignore !filter !diff
+.gitattributes !filter !diff
+
+# Optionally, you might want to exclude README files from encryption
+# README.md !filter !diff
+# */README.md !filter !diff
